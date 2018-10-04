@@ -1,6 +1,6 @@
 <div>
     <ol>
         <li ng-repeat="todo in $ctrl.list" ng-class="{completed: !todo.complete}"><button class="finish" ng-if="todo.complete">Complete</button>{{todo.items}}<span class="delete">
-            <img src="delete.png"></span></li>
+            <img src="delete.png" title="delete button" alt="delete button"></span></li>
     </ol>
 </div>

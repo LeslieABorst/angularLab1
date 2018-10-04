@@ -1,6 +1,11 @@
-.wrapper {
-    background-image: linear-gradient(to bottom right, rgb(255, 0, 128), rgb(255, 96, 176));
+html {
+    background: linear-gradient(to bottom right, rgb(255, 0, 128), rgb(255, 96, 176));
     background-repeat: no-repeat;
+    height: 100%;
+}
+
+.wrapper {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +15,6 @@
 .main {
     width: 350px;
     padding: 10px;
-    margin: 25px;
     border-radius: 10px;
     background: rgb(255, 255, 255);
     display: flex;
@@ -55,7 +59,8 @@
 }
 
 .delete {
-   float: right; 
+    margin-right: 10px;
+    float: right; 
 }
 
 .completed {
