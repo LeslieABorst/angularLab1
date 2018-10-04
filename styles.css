@@ -1,0 +1,63 @@
+.wrapper {
+    background-image: linear-gradient(to bottom right, rgb(255, 0, 128), rgb(255, 96, 176));
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main {
+    width: 350px;
+    padding: 10px;
+    margin: 25px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgb(78, 78, 78);
+}
+
+.add {
+    margin: 5px;
+    padding: 5px;
+    background:  rgb(255, 0, 128);
+    border: none;
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.input {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid rgb(211, 211, 211);
+}
+
+.todo {
+    text-transform: uppercase;
+}
+
+.heading {
+    margin-bottom: 0;
+}
+
+.finish {
+    font-size: 10px;
+    color: rgb(255, 0, 128);
+    border-radius: 3px;
+    padding: 3px;
+    border: 1px solid rgb(255, 0, 128);
+    background: rgb(255, 255, 255);
+    margin-right: 5px;
+}
+
+.delete {
+   float: right; 
+}
+
+.completed {
+    text-decoration: line-through;
+}

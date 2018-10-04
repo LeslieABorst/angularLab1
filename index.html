@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+        <title>Angular Lab 1</title>
+    </head>
+    <body class="wrapper">
+        <main class="main">
+            <h1 class="heading"><span class="todo">todo</span> List</h1>
+            <p>A place to store the things you have to do!</p>
+            <input class="input" type="text" placeholder="Fliter your to-dos" ng-model="filter">
+            <todo></todo>
+            <input class="input" type="text" placeholder="Add your to-do" ng-model="newitem">
+            <button class="add">Add</button>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.4/angular.min.js"></script>
+            <script src="index.js"></script>
+            <script src="components/todo/todo.js"></script>
+            <script src="components/todo/todo-controller.js"></script>
+    </body>
+</html>
