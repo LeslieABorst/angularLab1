@@ -1,6 +1,16 @@
-<div>
-    <ol>
-        <li ng-repeat="todo in $ctrl.list" ng-class="{completed: !todo.complete}"><button class="finish" ng-if="todo.complete">Complete</button>{{todo.items}}<span class="delete">
-            <img src="delete.png" title="delete button" alt="delete button"></span></li>
-    </ol>
-</div>
+<main class="main">
+    <h1 class="heading"><span class="todo">todo</span> List</h1>
+    <p>A place to store the things you have to do!</p>
+    <input class="input" type="text" placeholder="Fliter your to-dos" ng-model="$ctrl.search">
+    <div>
+        <ol>
+            <li ng-repeat="todo in $ctrl.list | filter: $ctrl.search" ng-class="{completed: !todo.complete}">
+                <button class="finish" ng-if="todo.complete" ng-click="$ctrl.completeTask(todo)">Complete</button>
+                <button class="undo" ng-if="!todo.complete" ng-click="$ctrl.undoTask(todo)">Undo</button>
+                {{todo.items}}<span class="delete">
+                <img src="delete.png" ng-click="$ctrl.removeTask($index)" title="delete button" alt="delete button"></span></li>
+        </ol>
+    </div>
+    <input class="input" type="text" placeholder="Add your to-do" ng-model="$ctrl.newTask">
+    <button class="add" ng-click="$ctrl.addTask()">Add</button>
+</main>
